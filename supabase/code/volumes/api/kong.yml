@@ -46,8 +46,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -60,7 +59,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
 
   - name: auth-v1-open-callback
@@ -74,8 +82,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -88,7 +95,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
 
   - name: auth-v1-open-authorize
@@ -102,8 +118,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -116,7 +131,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
 
   ## Secure Auth routes
@@ -132,8 +156,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -146,7 +169,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
       - name: key-auth
         config:
@@ -171,8 +203,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -185,7 +216,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
       - name: key-auth
         config:
@@ -210,8 +250,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -224,7 +263,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
       - name: key-auth
         config:
@@ -255,8 +303,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -269,7 +316,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
       - name: key-auth
         config:
@@ -294,8 +350,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -308,7 +363,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
       - name: key-auth
         config:
@@ -333,8 +397,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -347,7 +410,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
 
   ## Edge Functions routes
@@ -363,8 +435,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -377,7 +448,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
 
   ## Analytics routes
@@ -422,8 +502,7 @@ services:
       - name: cors
         config:
           origins:
-            - "$SITE_URL"
-            - "*"
+            - '*'
           methods:
             - GET
             - POST
@@ -436,7 +515,16 @@ services:
             - Content-Type
             - apikey
             - x-client-info
-          credentials: true
+            - prefer
+            - range
+            - accept-profile
+            - content-profile
+            - x-upsert
+            - accept
+          exposed_headers:
+            - Content-Range
+            - X-Total-Count
+          credentials: false
           max_age: 3600
       - name: basic-auth
         config:
