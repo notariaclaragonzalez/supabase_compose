@@ -75,9 +75,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -104,9 +104,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -135,9 +135,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -175,9 +175,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -215,9 +215,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -261,9 +261,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -301,9 +301,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -341,9 +341,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -372,9 +372,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
@@ -432,9 +432,9 @@ services:
       - name: cors
         config:
           origins:
-            - '^https://([a-z0-9-]+\.)*lovableproject\.com(:\d+)?$'
-            - '^https://([a-z0-9-]+\.)*lovable\.app(:\d+)?$'
-            - '$PUBLIC_SITE_URL'
+            - "$SITE_URL"
+            - "~^https://([a-z0-9-]+\\.)*lovableproject\\.com(:\\d+)?$"
+            - "~^https://([a-z0-9-]+\\.)*lovable\\.app(:\\d+)?$"
           methods:
             - GET
             - POST
