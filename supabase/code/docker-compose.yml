@@ -79,6 +79,9 @@ services:
       DASHBOARD_USERNAME: ${DASHBOARD_USERNAME}
       DASHBOARD_PASSWORD: ${DASHBOARD_PASSWORD}
 
+    # Para CORS (usado en volumes/api/kong.yml como $PUBLIC_SITE_URL)
+      PUBLIC_SITE_URL: ${PUBLIC_SITE_URL}
+
     # https://unix.stackexchange.com/a/294837
     entrypoint: bash -c 'eval "echo \"$$(cat ~/temp.yml)\"" > ~/kong.yml &&
       /docker-entrypoint.sh kong docker-start'
